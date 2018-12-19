@@ -1,36 +1,48 @@
 var gulp = require('gulp');
-var plumber = require('gulp-plumber');
-var uglify = require('gulp-uglify');
-var sass = require('gulp-sass');
-var wait = require('gulp-wait');
-var rename = require('gulp-rename');
-var autoprefixer = require('gulp-autoprefixer');
+var browserSync = require('browser-sync').create();
+var pkg = require('./package.json');
 
-gulp.task('scripts', function() {
-    return gulp.src('js/scripts.js')
-        .pipe(plumber(plumber({
-            errorHandler: function (err) {
-                console.log(err);
-                this.emit('end');
-            }
-        })))
-        .pipe(uglify({
-            output: {
-                comments: '/^!/'
-            }
-        }))
-        .pipe(rename({extname: '.min.js'}))
-        .pipe(gulp.dest('js'));
+// Copy third party libraries from /node_modules into /vendor
+gulp.task('vendor', function() {
+
+  // Bootstrap
+  gulp.src([
+      './node_modules/bootstrap/dist/**/*',
+      '!./node_modules/bootstrap/dist/css/bootstrap-grid*',
+      '!./node_modules/bootstrap/dist/css/bootstrap-reboot*'
+    ])
+    .pipe(gulp.dest('./vendor/bootstrap'))
+
+  // jQuery
+  gulp.src([
+      './node_modules/jquery/dist/*',
+      '!./node_modules/jquery/dist/core.js'
+    ])
+    .pipe(gulp.dest('./vendor/jquery'))
+
+  // jQuery Easing
+  gulp.src([
+      'node_modules/jquery.easing/*.js'
+    ])
+    .pipe(gulp.dest('vendor/jquery-easing'))
+
+})
+
+// Default task
+gulp.task('default', ['vendor']);
+
+// Configure the browserSync task
+gulp.task('browserSync', function() {
+  browserSync.init({
+    server: {
+      baseDir: "./"
+    }
+  });
 });
 
-gulp.task('styles', function () {
-    return gulp.src('./scss/styles.scss')
-        .pipe(wait(250))
-        .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
-        .pipe(gulp.dest('./css'));
-});
-
-gulp.task('watch', ['scripts', 'styles'], function() {
-    gulp.watch('js/*.js', ['scripts']);
-    gulp.watch('scss/*.scss', ['styles']);
+// Dev task
+gulp.task('dev', ['browserSync'], function() {
+  gulp.watch('./css/*.css', browserSync.reload);
+  gulp.watch('./js/*.js', browserSync.reload);
+  gulp.watch('./*.html', browserSync.reload);
 });
