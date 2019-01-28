@@ -32,3 +32,8 @@ border-top: none;
 .body{
 	padding-right: 50px
 }
+
+
+#headshot{
+    max-width:200px;
+}
