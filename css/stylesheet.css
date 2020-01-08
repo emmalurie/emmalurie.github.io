@@ -1,5 +1,33 @@
 #myName{
-font-family: 'Kaushan Script', cursive;
+font-size: 80px;
+}
+
+
+
+p{
+ font-size: 18px;
+}
 
 }
 
+body{
+	background-color: #fbf7f5;
+}
+
+
+#idiv{
+	text-align:center;
+}
+
+.biotext {
+	font-size: 20
+}
+
+li{
+	font-size: 16px;
+
+} 
+
+#aboutMe {
+  float: left;
+ }

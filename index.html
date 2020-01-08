@@ -3,107 +3,183 @@
 
 <head>
 
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="Emma Lurie's personal website">
-  <meta name="author" content="Emma Lurie">
-  <meta name="keywords" content="Emma Lurie, UC Berkeley, Wellesley College, personal website, computer science, information">
-  <link href="https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap" rel="stylesheet">
-     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="Emma Lurie's personal website">
+	<meta name="author" content="Emma Lurie">
+	<meta name="keywords" content="Emma Lurie, UC Berkeley, Wellesley College, personal website, computer science, information">
+	<link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Open+Sans+Condensed:700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<!-- Custom Fonts -->
+	<link href="css/stylesheet.css" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
-    <!-- Custom Fonts -->
-  	<link href="css/stylesheet.css" rel="stylesheet">
 
 <!--       <link href="css/grayscale.min.css" rel="stylesheet">
- -->
+-->
 <title> Emma Lurie</title>
 </head>
 <body> 
 
-		<section class ="container content-section aboutMe"> 
-		<h1 id="myName"> Emma Lurie</h1>
 
-		<p>
-		I'm a first year PhD student at the UC Berkeley School of Information where I am advised by <a href="https://www.ischool.berkeley.edu/people/deirdre-mulligan">Deirdre Mulligan</a>. My current research interests include online reputation management and reputation repair, automated and crowdsourced fact-checking, and election-related search engine audits.</p>
 
-		 <p> I have a BA in Computer Science and Chinese Language & Culture from Wellesley College. Previously, I worked as an undergraduate research assistant at the Wellesley College <a href="https://cs.wellesley.edu/~credlab">Cred Lab</a> and the<a href="https://electionlab.mit.edu"> MIT Election Data and Science Lab</a>.</p>
+	<section class ="container content-section aboutMe" style='padding-top: 100px'> 
 
-		 <p>Prounouns: she/hers</p>
+	 
+			<h1 id="myName"> Emma Lurie
+				<a href="https://twitter.com/emma_lurie"><img src="img/twitter.png" alt="twitter profile" style="height:45px">    </a>
+				<a href="docs/Emma_Lurie_CV_Jan_2020.pdf"><img src="img/CV.png" alt = "CV link" style="height:50px"></a>
+		</h1> 
+		<br>
+		<div>
+			<p>
+			<img class="mr-4 img-fluid img-thumbnail float-left" id="headshot" src="img/Emma_Lurie_smaller.jpg" alt="Emma Lurie">
+				I'm a first year PhD student at the UC Berkeley School of Information where I am advised by <a href="https://www.ischool.berkeley.edu/people/deirdre-mulligan">Deirdre Mulligan</a>. My current research interests include online reputation management and reputation repair, automated and crowdsourced fact-checking, and election-related search engine audits. </p>
+
+				<p>I have a BA in Computer Science and Chinese Language & Culture from Wellesley College. Previously, I worked as an undergraduate research assistant at the Wellesley College <a href="https://cs.wellesley.edu/~credlab">Cred Lab</a> and the<a href="https://electionlab.mit.edu"> MIT Election Data and Science Lab</a>.
+				</p>
+				<p>prounouns: she/her</p>
+
+
+			</div>
 		</section>
-	<section class="container pubs">
-		<h2> Peer-Reviewed Papers </h2>
 
-		<p><strong><a class='ptitle' href="docs/FAT2020.pdf">The Case for Voter-Centered Audits of Search Engines During Political Elections</a></strong>.
+		<div style="clear:both;"></div>
+
+
+		<section class="pubs">
+			<div class="container">
+		<br>
+		<br>
+			<h2> Peer Reviewed Papers </h2>
 			<br>
+			<div id="accordion">
+				<div class="card">
+					<div class="card-header" id="headingOne">
+						<h5 class="mb-0">
+							<p><strong><a class='ptitle' href="docs/FAT2020.pdf">The Case for Voter-Centered Audits of Search Engines During Political Elections</a></strong>. <a href="https://cs.wellesley.edu/~eni/">Eni Mustafaraj</a>, <strong>Emma Lurie</strong>, and Claire Devine. ACM FAT* 2020. 
 
-		<a href="https://cs.wellesley.edu/~eni/">Eni Mustafaraj </a>, <strong>Emma Lurie</strong>, and Claire Devine. FAT* 2020. </p>
-			<ul>
-				<li> Search engine audits of election related information on Google primarily query candidate names (e.g. Elizabeth Warren, Donald Trump). </li>
-				<li> We find that voters search for many queries not typically tracked in audit studies.</li>
-				<li> Political science has a rich literature that can be used to design future audit studies that better model voter search behavior.</li>
-			</ul>
+								<button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+									See More
+								</button>
+							</p>
+						</h5>
+					</div>
 
+					<div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+						<div class="card-body">
+							<ul>
+								<li> Search engine audits of election related information on Google primarily query candidate names (e.g. Elizabeth Warren, Donald Trump). </li>
+								<li> We find that voters search for many queries not typically tracked in audit studies.</li>
+								<li> Political science has a rich literature that can be used to design future audit studies that better model voter search behavior.</li>
+							</ul>
 
-          	<p><strong><a class='ptitle' href="docs/FLAIRS_19.pdf">Opening Up the Black Box: Auditing Google’s Top Stories Algorithm</a>.</strong>
-          	</br>
+						</div>
+					</div>
+				</div>
+				<div class="card">
+					<div class="card-header" id="headingTwo">
+						<h5 class="mb-0">
+							<p><strong><a class='ptitle' href="docs/FLAIRS_19.pdf">Opening Up the Black Box: Auditing Google’s Top Stories Algorithm</a>.</strong>
+								<strong>Emma Lurie</strong> and Eni Mustafaraj. AAAI FLAIRS 2019.
+								<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+									See More
+								</button>
+							</p>
+						</h5>
+					</div>
+					<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+						<div class="card-body">
+							<ul>
+								<li>The Google Top stories feature news coverage as presented in Top stories relies on a small number of mainstream publishers.</li>
+								<li>Google Top stories appears to be experimenting with lesser known sources in the third position of the panel.</li>
+								<li>Even through Google's algorithmic lens, we can see media outlets' "selection bias" (e.g. certain publishers are more likely to cover particular topics). </li>
+							</ul>      </div>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card-header" id="headingThree">
+							<h5 class="mb-0">
+								<p><strong><a class='ptitle' href="docs/websci18-investigating.pdf">Investigating the Effects of Google's Search Engine Result Page in Evaluating the Credibility of Online News Sources</a>.</strong>
 
-           <strong>Emma Lurie</strong> and Eni Mustafaraj. AAAI FLAIRS 2019.</p>
-          	<ul>
-          		<li>The Google Top stories feature news coverage as presented in Top stories relies on a small number of mainstream publishers.</li>
-          		<li>Google Top stories appears to be experimenting with lesser known sources in the third position of the panel.</li>
-          		<li>Even through Google's algorithmic lens, we can see media outlets' "selection bias" (e.g. certain publishers are more likely to cover particular topics). </li>
-          	</ul>
-
-
-	  		<section class="container pubs">
-
-
-          
-          	<p><strong><a class='ptitle' href="docs/websci18-investigating.pdf">Investigating the Effects of Google's Search Engine Result Page in Evaluating the Credibility of Online News Sources</a>.</strong>
-          	<br>
-
-	        <strong>Emma Lurie</strong> and Eni Mustafaraj. ACM WebSci 2018.</p>
-
-	         <ul>
-	         	<li>Web literacy best practices urge individuals to examine third-party information to evaluate the credibility of source.</li>
-	         	<li> We find a low prevelance of high quality Google search results pages for local newspapers. This is problematic in part because a common disinformation tactic is for a site to appear to be a local newspaper.</li>
-	         <li> We observed 30 students as they interacted with the Google SERP to identify which parts were helpful in evaluating the credibility of sources. Overall, the Google curated features (Knowledge Panel, Top stories) were cited as particularly useful by participatns.</li>
-	          </ul>
-
-	         </ul>
-	         </section>
-
-	         <section class= "container otherpubs">
-
-	         <h2> Other publications</h2>
-	         <ul>
-	         <li><a  class='ptitle' href="docs/contestability.pdf">Considering Contestability in Automated Fact-Checking Systems.</a> Contestability Workshop at CSCW'19.</li>
-
-         	<li><a class='ptitle' href="docs/Lurie_thesis.pdf">The Challenges of Algorithmically Assigning Fact-checks: A Sociotechnical Examination of Google's Reviewed Claims.</a> Undergraduate Thesis, 2019.  </li>
-
-            <li> <a class='ptitle' href="docs/cplusj2019-interplay.pdf">How the Interplay of Google and Wikipedia Affects Perceptions of Online News Sources</a>. Computation + Journalism 2019. With Annabel Rothschild and Eni Mustafaraj.
-	  		</li>
-	  	</ul>
-	  </section>
-
-	  <section class="container blogging">
-	  	<h2> Blogging</h2>
-        <ul>
-          <li> <a href="https://towardsdatascience.com/what-is-good-enough-for-automated-fact-checking-4454ace645c7">What is “good enough” for automated fact-checking?</a>
-          <li><a href="https://medium.com/@emma_lurie/googling-for-the-kansas-primary-fd91bb237da9">Googling for the Kansas Primary</a></li>
-          <li><a href="https://www.wellesley.edu/albright/about/blog/3836-why-google-isn%E2%80%99t-always-right">Why Google Isn't Always Right </a></li>
-        </ul>
+									<strong>Emma Lurie</strong> and Eni Mustafaraj. ACM WebSci 2018.
+									<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+										See More
+									</button>
+								</p>
+							</h5>
 
 
-	  </section>
+						</div>
+						<div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+							<div class="card-body">
+								<ul>
+									<li>Web literacy best practices urge individuals to examine third-party information to evaluate the credibility of source.</li>
+									<li> We find a low prevelance of high quality Google search results pages for local newspapers. This is problematic in part because a common disinformation tactic is for a site to appear to be a local newspaper.</li>
+									<li> We observed 30 students as they interacted with the Google SERP to identify which parts were helpful in evaluating the credibility of sources. Overall, the Google curated features (Knowledge Panel, Top stories) were cited as particularly useful by participatns.</li>
+								</ul>								</div>
+							</div>
+						</div>
+					</div>
 
 
 
-	</div>
+
+					<section class= "container otherpubs">
+						<br> 
+						<h2> Non-Archival Publications</h2>
+						<br>
+						<table class="table .table-bordered">
+							<tbody>
+								<tr> 
+									<td><h5><a  class='ptitle' href="docs/contestability.pdf">Considering Contestability in Automated Fact-Checking Systems.</a> Contestability Workshop at CSCW 2019.<h5></td>
+									</tr>
+									<tr>
+										<td><h5><a class='ptitle' href="docs/Lurie_thesis.pdf">The Challenges of Algorithmically Assigning Fact-checks: A Sociotechnical Examination of Google's Reviewed Claims.</a> Undergraduate Thesis, 2019. </h5> </td>
+									</tr>
+									<tr>	
+										<td> <h5><a class='ptitle' href="docs/cplusj2019-interplay.pdf">How the Interplay of Google and Wikipedia Affects Perceptions of Online News Sources</a>. With Annabel Rothschild and Eni Mustafaraj. Computation + Journalism 2019.</h5></td>
+									</tr>
+
+								</tbody>
+							</table>
+
+
+
+						</section>
+
+						<section class="container blogging">
+							<br>
+							<h2> Blogging</h2>
+					
+								<table class="table .table-bordered">
+							<tbody>
+								<tr> 
+									<td><h5> <a href="https://towardsdatascience.com/what-is-good-enough-for-automated-fact-checking-4454ace645c7">What is “good enough” for automated fact-checking?</a><h5></td>
+									</tr>
+									<tr>
+										<td><h5><a href="https://medium.com/@emma_lurie/googling-for-the-kansas-primary-fd91bb237da9">Googling for the Kansas Primary</a></h5> </td>
+									</tr>
+									<tr>	
+										<td> <h5><a href="https://www.wellesley.edu/albright/about/blog/3836-why-google-isn%E2%80%99t-always-right">Why Google Isn't Always Right </a></h5></td>
+									</tr>
+
+								</tbody>
+							</table>
+
+							</section>
+
+
+
+
+						</div>
 
 
 
 
 
-</body>
-</html>
+					</body>
+					</html>
