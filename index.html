@@ -1,192 +1,238 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <script data-ad-client="ca-pub-9504463820102436" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<meta name="description" content="Emma Lurie's personal website">
-	<meta name="author" content="Emma Lurie">
-	<meta name="keywords" content="Emma Lurie, UC Berkeley, Wellesley College, personal website, computer science, information">
-	<link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Open+Sans+Condensed:700&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-	<!-- Custom Fonts -->
-	<link href="css/stylesheet.css" rel="stylesheet">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-
-
-<!--       <link href="css/grayscale.min.css" rel="stylesheet">
--->
-<title> Emma Lurie</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Emma Lurie's personal website - Public interest technologist and law student focusing on technology policy research">
+    <meta name="author" content="Emma Lurie">
+    <meta name="keywords" content="Emma Lurie, UC Berkeley, Stanford Law School, technology policy, platform governance, Section 230">
+    
+    <title>Emma Lurie</title>
+    
+    <!-- Open Graph tags -->
+    <meta property="og:title" content="Emma Lurie">
+    <meta property="og:description" content="Public interest technologist and interdisciplinary researcher focusing on technology policy research at the intersection of platforms, democracy, and law.">
+    <meta property="og:image" content="img/Emma Lurie.jpg>
+    <meta property="og:url" content="https://emmalurie.github.io">
+    <!-- CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
 </head>
-<body> 
+<body class="bg-gray-100 text-gray-900 font-sans">
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-3">
+            <div class="flex justify-between items-center">
+                <h1 class="text-xl font-bold">Emma Lurie</h1>
+                <div>
+                    <a href="docs/Emma_Lurie_CV.pdf" target="_blank" rel="noopener noreferrer" class="mx-2 hover:text-blue-600">CV</a>
+                    <a href="#about" class="mx-2 hover:text-blue-600">About</a>
+                    <a href="#research" class="mx-2 hover:text-blue-600">Research</a>
+                    <a href="#publications" class="mx-2 hover:text-blue-600">Publications</a>
+                    <a href="#other-writing" class="mx-2 hover:text-blue-600">Other Writing</a>
+                    <a href="#contact" class="mx-2 hover:text-blue-600">Contact</a>
+                </div>
+            </div>
+        </nav>
+    </header>
 
+    <main class="container mx-auto px-6 py-8">
+        <section id="about" class="mb-12">
+            <h2 class="text-2xl font-bold mb-4">About Me</h2>
+            <div class="flex flex-col md:flex-row items-center mb-6">
+                <div class="md:w-1/5 mb-4 md:mb-0 md:mr-6">
+                    <img src="img/Emma_Lurie.jpg" alt="Emma Lurie" class="rounded-full w-48 h-48 object-cover shadow-lg">
+                </div>
+                <div class="md:w-4/5">
+                    <h1 class="text-3xl font-bold mb-2">Emma Lurie</h1>
+               
+            <p class="mb-4">
+                As a public interest technologist and interdisciplinary researcher, I focus on the critical intersections of platforms, democracy, and law. My research and advocacy work aims to shape a more equitable and accountable technology ecosystem through evidence-based policymaking and the development of responsible technologies. Currently, I am pursuing a JD at Stanford Law School and a PhD at the UC Berkeley School of Information, with an anticipated graduation for both degrees in Summer 2025.            </p>
+            <p class="mb-4">
+                Previously, I've had the opportunity to work with some amazing teams at the Knight First Amendment Institute, CISA, Stanford Internet Observatory, ACLU-NorCal, Plaintext Group, Wellesley College Cred Lab, MIT Election Data and Science Lab, and the U.S. Census Bureau. I have a BA in Computer Science and Chinese Language & Culture from Wellesley College.
+            </p>
+        </section>
 
+        <section id="research" class="mb-12">
+            <h2 class="text-2xl font-bold mb-4">Research</h2>
+            <h3 class="text-xl font-semibold mb-2">My dissertation research examines:</h3>
+            <ol class="list-decimal list-inside mb-4">
+                <li class="mb-2"><strong>Platform governance of election information:</strong> Investigating how search engine algorithms and content moderation policies affect the visibility and credibility of election-related information, and their impact on voter trust and democratic processes.</li>
+                <li class="mb-2"><strong>Judicial interpretations of technology-mediated harms:</strong> Analyzing how courts frame and interpret doxxing cases, exploring the legal system's response to online privacy violations and harassment.</li>
+                <li class="mb-2"><strong>Evolution of Section 230 jurisprudence:</strong> Studying the changing interpretations of Section 230 of the Communications Decency Act through computational legal analysis of court decisions, focusing on metaphors used to conceptualize the Internet and online platforms.</li>
+            </ol>
+        
+            <h3 class="text-xl font-semibold mb-2 mt-6">Other Research Areas:</h3>
+            <ul class="list-none space-y-4">
+                <li>
+                    <strong>Algorithmic Auditing:</strong> Developing and applying methodologies to assess the fairness, accountability, and transparency of algorithmic systems. This work involves:
+                    <ul class="list-disc list-inside ml-4 mt-2">
+                        <li>Conducting sociotechnical audits of search engines and their impact on information access and democratic processes.</li>
+                        <li>Exploring the challenges and opportunities in auditing AI systems in various domains, particularly in criminal justice contexts.</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>AI Ethics:</strong> Investigating the ethical implications of AI systems and their deployment in society. Key focus areas include:
+                    <ul class="list-disc list-inside ml-4 mt-2">
+                        <li>Examining the intersection of AI, diversity, and inclusion, with a particular emphasis on reconfiguring these concepts for AI ethics frameworks.</li>
+                        <li>Analyzing the ethical considerations in AI-driven content moderation and fact-checking systems.</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>Computer Science Research Methods and Best Practices:</strong> Exploring the ethical dimensions of computer science research practices. This research encompasses:
+                    <ul class="list-disc list-inside ml-4 mt-2">
+                        <li>Investigating the ethical implications of crowdsourced research methodologies, particularly in the context of AI and machine learning studies.</li>
+                        <li>Examining the responsibilities of researchers in designing and conducting studies that use platform data.</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
 
-	<section class ="container content-section aboutMe" style='padding-top: 100px'> 
+        <section id="publications" class="mb-12">
+            <h2 class="text-2xl font-bold mb-4">Publications</h2>
+            
+            <h3 class="text-xl font-semibold mb-2">Peer Reviewed Papers</h3>
+            <ul class="list-none space-y-4">
+                <li>
+                    <a href="https://journals.sagepub.com/doi/epub/10.1177/14614448221136505" class="text-blue-600 hover:underline"><strong>Search quality complaints and imaginary repair: Control in articulations of Google Search</strong></a>.<br>
+                    <a href="https://danielsgriffin.com/" class="text-blue-600 hover:underline">Daniel Griffin*</a> and <strong>Emma Lurie*</strong>.<br>
+                    New Media & Society 2022.
+                </li>
+                
+                <li>
+                    <a href="docs/AIES2021-reconfiguring.pdf" class="text-blue-600 hover:underline"><strong>Reconfiguring Diversity and Inclusion for AI Ethics</strong></a>.<br>
+                    <a href="https://nicolechi.com/" class="text-blue-600 hover:underline">Nichole Chi</a>, <strong>Emma Lurie</strong>, and Deirdre K. Mulligan.<br>
+                    AIES 2021.
+                </li>
+                
+                <li>
+                    <a href="docs/TTO_2020.pdf" class="text-blue-600 hover:underline"><strong>'Highly Partisan' and 'Blatantly Wrong': Analyzing News Publishers' Critiques of Google's Reviewed Claims</strong></a>.<br>
+                    <strong>Emma Lurie</strong> and <a href="https://cs.wellesley.edu/~eni/" class="text-blue-600 hover:underline">Eni Mustafaraj</a>.<br>
+                    Truth and Trust Conference 2020.
+                </li>
+                
+                <li>
+                    <a href="docs/FAT2020.pdf" class="text-blue-600 hover:underline"><strong>The Case for Voter-Centered Audits of Search Engines During Political Elections</strong></a>.<br>
+                    Eni Mustafaraj, <strong>Emma Lurie</strong>, and Claire Devine.<br>
+                    ACM FAccT 2020.
+                </li>
+                
+                <li>
+                    <a href="docs/FLAIRS_19.pdf" class="text-blue-600 hover:underline"><strong>Opening Up the Black Box: Auditing Google's Top Stories Algorithm</strong></a>.<br>
+                    <strong>Emma Lurie</strong> and Eni Mustafaraj.<br>
+                    AAAI FLAIRS 2019.
+                </li>
+                
+                <li>
+                    <a href="docs/websci18-investigating.pdf" class="text-blue-600 hover:underline"><strong>Investigating the Effects of Google's Search Engine Result Page in Evaluating the Credibility of Online News Sources</strong></a>.<br>
+                    <strong>Emma Lurie</strong> and Eni Mustafaraj.<br>
+                    WebSci 2018.
+                </li>
+            </ul>
+        
+            <h3 class="text-xl font-semibold mb-2 mt-6">Preprints</h3>
+            <ul class="list-none space-y-4">
+                <li>
+                    <a href="docs/preprint-searching.pdf" class="text-blue-600 hover:underline"><strong>Searching for Representation: A Sociotechnical Audit of Googling for Members of Congress</strong></a>.<br>
+                    <strong>Emma Lurie</strong> and Deirdre K. Mulligan.
+                </li>
+                <li>
+                    <a href="docs/preprint-google-says-so.pdf" class="text-blue-600 hover:underline"><strong>Google Says So(S): An Examination of the Entanglement of Search Engines and Information on Ballot Propositions</strong></a>.<br>
+                    <strong>Emma Lurie</strong>.
+                </li>
+            </ul>
+        
+            <h3 class="text-xl font-semibold mb-2 mt-6">Non-Archival Publications</h3>
+            <ul class="list-none space-y-4">
+                <li>
+                    <a href="docs/chi2021-ediscovery.pdf" class="text-blue-600 hover:underline"><strong>Who needs imagination? Exploring legal professionals' lack of curiosity about e-discovery tools</strong></a>.<br>
+                    <strong>Emma Lurie</strong> and Deirdre K. Mulligan.<br>
+                    Designing Technological Systems with the Algorithmic Imaginations of Those Who Labor Workshop at CHI'21.
+                </li>
+                <li>
+                    <a href="docs/CHI2020-crowdworkers.pdf" class="text-blue-600 hover:underline"><strong>Crowdworkers Are Not Judges: Rethinking Crowdsourced Vignette Studies as a Risk Assessment Evaluation Technique</strong></a>.<br>
+                    <strong>Emma Lurie</strong> and Deirdre K. Mulligan.<br>
+                    Fair and Responsible AI Workshop at CHI'20.
+                </li>
+                <li>
+                    <a href="docs/cplusj-investigating.pdf" class="text-blue-600 hover:underline"><strong>Investigating Causal Effects of Instructions in Crowdsourced Claim Matching</strong></a>.<br>
+                    <strong>Emma Lurie</strong>, <a href="https://lucy3.github.io/" class="text-blue-600 hover:underline">Lucy Li</a>, <a href="https://www.sofiadewar.com/" class="text-blue-600 hover:underline">Sofia Dewar</a>, Masha Belyi, Daniel Rincón, John Baldwin, and Rajvardhan Oak.<br>
+                    Computation + Journalism 2020.
+                </li>
+                <li>
+                    <a href="docs/contestability.pdf" class="text-blue-600 hover:underline"><strong>Considering Contestability in Automated Fact-Checking Systems</strong></a>.<br>
+                    <strong>Emma Lurie</strong>.<br>
+                    Contestability Workshop at CSCW 2019.
+                </li>
+                <li>
+                    <a href="docs/Lurie_thesis.pdf" class="text-blue-600 hover:underline"><strong>The Challenges of Algorithmically Assigning Fact-checks: A Sociotechnical Examination of Google's Reviewed Claims</strong></a>.<br>
+                    <strong>Emma Lurie</strong>.<br>
+                    Undergraduate Thesis, 2019.
+                </li>
+                <li>
+                    <a href="docs/cplusj2019-interplay.pdf" class="text-blue-600 hover:underline"><strong>How the Interplay of Google and Wikipedia Affects Perceptions of Online News Sources</strong></a>.<br>
+                    <a href="https://annabelrothschild.com/" class="text-blue-600 hover:underline">Annabel Rothschild</a>, <strong>Emma Lurie</strong>, and Eni Mustafaraj.<br>
+                    Computation + Journalism 2019.
+                </li>
+            </ul>
+        </section>
+        
+        <section id="other-writing" class="mb-12">
+            <h2 class="text-2xl font-bold mb-4">Other Writing</h2>
+            <ul class="list-none space-y-4">
+                <li>
+                    <a href="https://emma-lurie.medium.com/the-jd-phd-advice-i-share-with-prospective-students-43bc67037270" class="text-blue-600 hover:underline"><strong>JD/PhD Advice for Prospective Students</strong></a>.<br>
+                    <strong>Emma Lurie</strong>.<br>
+                    Medium. September 2024.
+                </li>
+                <li>
+                    <a href="https://techpolicy.press/comparing-platform-research-api-requirements/" class="text-blue-600 hover:underline"><strong>Comparing Platform Research API Requirements</strong></a>.<br>
+                    <strong>Emma Lurie</strong>.<br>
+                    Tech Policy Press. March 2023.
+                </li>
+                <li>
+                    <a href="https://cyber.fsi.stanford.edu/io/news/tiktok-just-announced-data-its-willing-share-whats-missing" class="text-blue-600 hover:underline"><strong>TikTok just announced the data it's willing to share. What's missing?</strong></a><br>
+                    <strong>Emma Lurie</strong>.<br>
+                    Stanford Internet Observatory Blog. February 2023.
+                </li>
+                <li>
+                    <a href="https://emma-lurie.medium.com/tips-for-working-with-an-undergraduate-research-advisor-7a9b65c39573" class="text-blue-600 hover:underline"><strong>Tips for Working with an Undergraduate Research Advisor</strong></a>.<br>
+                    <strong>Emma Lurie</strong>.<br>
+                    Medium. June 2021.
+                </li>
+                <li>
+                    <a href="https://towardsdatascience.com/what-is-good-enough-for-automated-fact-checking-4454ace645c7" class="text-blue-600 hover:underline"><strong>What is "good enough" for automated fact-checking?</strong></a><br>
+                    <strong>Emma Lurie</strong>.<br>
+                    Towards Data Science. August 2019.
+                </li>
+                <li>
+                    <a href="https://medium.com/@emma_lurie/googling-for-the-kansas-primary-fd91bb237da9" class="text-blue-600 hover:underline"><strong>Googling for the Kansas Primary</strong></a>.<br>
+                    <strong>Emma Lurie</strong>.<br>
+                    Medium. August 2018.
+                </li>
+                <li>
+                    <a href="https://www.wellesley.edu/albright/about/blog/3836-why-google-isn%E2%80%99t-always-right" class="text-blue-600 hover:underline"><strong>Why Google Isn't Always Right</strong></a>.<br>
+                    <strong>Emma Lurie</strong>.<br>
+                    The Spoke. October 2017.
+                </li>
+            </ul>
+        </section>
 
-	 
-			<h1 id="myName"> Emma Lurie
-				<a href="https://twitter.com/emma_lurie"><img src="img/twitter.png" alt="twitter profile" style="height:45px">    </a>
-				<a href="docs/Emma_Lurie_CV.pdf"><img src="img/CV.png" alt = "CV link" style="height:50px"></a>
-		</h1> 
-		<br>
-		<div>
-			<p>
-			<img class="mr-4 img-fluid img-thumbnail float-left" id="headshot" src="img/Emma_Lurie_smaller.jpg" alt="Emma Lurie">
-I am a public interest technologist and law student exploring the intersection of technology, democracy, and law. I am currently a JD candidate at Stanford Law School and a PhD candidate at the UC Berkeley School of Information.</p>
-				<p> My ongoing dissertation work examines how platform governance decisions along with technical and policy choices of other actors in the election information ecosystem are shaping today’s online civic infrastructure and trust in democratic processes. Other research interests include anti-doxxing laws, U.S. technology policy, and best methodological and ethical practices for social media research.</p>
-				<p> Previously, I’ve had the opportunity to work with some amazing teams at CISA, Stanford Internet Observatory, <a href="https://www.aclunc.org/issue/technology-civil-liberties">ACLU NorCal</a>, <a href="https://www.plaintextgroup.com/">Plaintext Group</a>, <a href="https://cs.wellesley.edu/~credlab/">Wellesley College Cred Lab</a>, <a href="https://electionlab.mit.edu/">MIT Election Data and Science Lab</a>, and the <a href="https://www.codingitforward.com/summer-fellowships">U.S. Census Bureau</a>. I have a BA in Computer Science and Chinese Language & Culture from Wellesley College.</p>
-				<p>prounouns: she/her</p>
+        <section id="contact" class="mb-12">
+            <h2 class="text-2xl font-bold mb-4">Contact</h2>
+            <p>Email: elurie [AT] stanford.edu</p>
+            <p>Twitter: <a href="https://twitter.com/emma_lurie" class="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">@emma_lurie</a></p>
+        </section>
+    </main>
 
+    <footer class="bg-gray-800 text-white py-6">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2024 Emma Lurie. All rights reserved.</p>
+        </div>
+    </footer>
 
-			</div>
-		</section>
-
-		<div style="clear:both;"></div>
-
-
-		<section class="pubs">
-			<div class="container">
-		<br>
-		<br>
-			<h3> Peer Reviewed Papers </h3>
-
-			<br> 
-			<table class="table .table-bordered">
-				<tbody>
-				<tr>	
-            		<td><strong><a class='ptitle' href="https://journals.sagepub.com/doi/epub/10.1177/14614448221136505">Search quality complaints and imaginary repair: Control in articulations of Google Search</strong></a>. 
-            		<a href="https://danielsgriffin.com/"> Daniel Griffin*</a> and <strong>Emma Lurie*</strong>. New Media & Society 2022.</td>
-	</tr>
-
-					<tr>	
-						<td><strong><a class='ptitle' href="docs/AIES2021-reconfiguring.pdf">Reconfiguring Diversity and Inclusion for AI Ethics.</strong></a>
-
-							<a href="https://nicolechi.com/"> Nichole Chi</a>, <strong>Emma Lurie</strong>, and Deirdre K. Mulligan. AIES 2021.</td>
-					</tr>
-
-					<tr> 
-						<td><strong><a class='ptitle' href="docs/TTO_2020.pdf">'Highly Partisan' and 'Blatantly Wrong': Analyzing News Publishers' Critiques of Google's Reviewed Claims</strong></a>.
-							<strong>Emma Lurie</strong> and <a href="https://cs.wellesley.edu/~eni/">Eni Mustafaraj</a>. Truth and Trust Conference 2020. 
-						</td>
-					</tr>
-
-					<tr> 
-						<td><strong><a class='ptitle' href="docs/FAT2020.pdf">The Case for Voter-Centered Audits of Search Engines During Political Elections</a></strong>. Eni Mustafaraj, <strong>Emma Lurie</strong>, and Claire Devine. ACM FAT* 2020. </td>
-					</tr>
-					
-					<tr> <td> <strong><a class='ptitle' href="docs/FLAIRS_19.pdf">Opening Up the Black Box: Auditing Google’s Top Stories Algorithm</a></strong>.
-						<strong>Emma Lurie</strong> and Eni Mustafaraj. AAAI FLAIRS 2019.</td> 
-					</tr>
-					
-					<tr>
-						<td><strong><a class='ptitle' href="docs/websci18-investigating.pdf">Investigating the Effects of Google's Search Engine Result Page in Evaluating the Credibility of Online News Sources</a>.</strong><strong> Emma Lurie</strong> and Eni Mustafaraj.</td>
-					</tr>
-						
-				</tbody>
-				</table>
-			</div>
-			</section>
-
-			
-			<section class= "container otherpubs">
-				<br> 
-				<h3> Preprints </h3>
-				<br> 
-				<table class="table .table-bordered">
-					<tbody>
-					<tr>
-						<td><a href="docs/preprint-searching.pdf"><strong>Searching for Representation: A Sociotechnical Audit of Googling for Members of Congress.</a></strong> <strong>Emma Lurie</strong> and Deirdre K. Mulligan. </td>
-					</tr>
-					<tr>
-						<td><a href="docs/preprint-google-says-so.pdf"><strong>Google Says So(S): An Examination of the Entanglement of Search Engines and Information on Ballot Propositions.</a> <strong>Emma Lurie</strong>. </td>
-					</tr>
-				</tbody>
-					</table>
-				</div>
-					</section>
-
-
-
-
-					<section class= "container otherpubs">
-						<br> 
-						<h3>Non-Archival Publications</h3>
-						<br>
-						<table class="table .table-bordered">
-							<tbody>
-								<tr>
-									<td><strong><a class="ptitle" href="docs/chi2021-ediscovery.pdf">Who needs imagination? Exploring legal professionals’ lack of curiosity about e-discovery tools.</a></strong> <strong>Emma Lurie</strong> and Deirdre K. Mulligan. Designing Technological Systems with the Algorithmic Imaginations of Those Who Labor Workshop at CHI'21.</td>
-								 </tr>
-								 <tr>
-									<td><strong><a class="ptitle" href="docs/CHI2020-crowdworkers.pdf">Crowdworkers Are Not Judges: Rethinking Crowdsourced Vignette Studies as a Risk Assessment Evaluation Technique.</a></strong> <strong>Emma Lurie</strong> and Deirdre K. Mulligan. Fair and Responsible AI Workshop at CHI'20.</td>
-								 </tr>
-									<tr>	
-										<td><strong><a class='ptitle' href="docs/cplusj-investigating.pdf">Investigating Causal Effects of Instructions in Crowdsourced Claim Matching</a></strong>. Computation + Journalism 2020. <strong>Emma Lurie</strong><a href="https://lucy3.github.io/">, Lucy Li</a>, <a href="https://www.sofiadewar.com/"> Sofia Dewar</a>, Masha Belyi, Daniel Rincón, John Baldwin, and Rajvardhan Oak.</td>
-									</tr>
-								<tr> 
-									<td><strong><a class='ptitle' href="docs/contestability.pdf">Considering Contestability in Automated Fact-Checking Systems.</a></strong> <strong>Emma Lurie</strong>. Contestability Workshop at CSCW 2019.</td>
-									</tr>
-									<tr>
-										<td><strong><a class='ptitle' href="docs/Lurie_thesis.pdf">The Challenges of Algorithmically Assigning Fact-checks: A Sociotechnical Examination of Google's Reviewed Claims.</a></strong> Undergraduate Thesis, 2019. </td>
-									</tr>
-									<tr>	
-										<td><strong><a class='ptitle' href="docs/cplusj2019-interplay.pdf">How the Interplay of Google and Wikipedia Affects Perceptions of Online News Sources</a></strong>. <a href="https://annabelrothschild.com/">Annabel Rothschild</a>, <strong>Emma Lurie</strong>, and Eni Mustafaraj. Computation + Journalism 2019.</td>
-									</tr>
-
-								</tbody>
-							</table>
-
-
-
-						</section>
-
-						<section class="container blogging">
-							<br>
-							<h3> Other Writing</h3>
-					
-								<table class="table .table-bordered">
-							<tbody>
-								
-								<tr> 
-                            		<td> <a href="https://emma-lurie.medium.com/the-jd-phd-advice-i-share-with-prospective-students-43bc67037270"> JD/PhD Advice for Prospective Students</a>. Medium. September 2024. </td>
-                        	</tr>
-							<tr> 
-                            		<td> <a href="https://techpolicy.press/comparing-platform-research-api-requirements/"> Comparing Platform Research API Requirements</a>. Tech Policy Press. March 2023. </td>
-                        	</tr>
-							<tr> 
-                            		<td> <a href="https://cyber.fsi.stanford.edu/io/news/tiktok-just-announced-data-its-willing-share-whats-missing"> TikTok just announced the data it’s willing to share. What’s missing?</a> Stanford Internet Observatory Blog. February 2023. </td>
-                        	</tr>
-									<tr> 
-										<td> <a href="https://emma-lurie.medium.com/tips-for-working-with-an-undergraduate-research-advisor-7a9b65c39573"> Tips for Working with an Undergraduate Research Advisor</a>. Medium. June 2021.</td> 
-									</tr>
-									<tr>
-									<td><a href="https://towardsdatascience.com/what-is-good-enough-for-automated-fact-checking-4454ace645c7">What is “good enough” for automated fact-checking?</a> Towards Data Science. August 2019.</td>
-									</tr>
-									<tr>
-										<td><a href="https://medium.com/@emma_lurie/googling-for-the-kansas-primary-fd91bb237da9">Googling for the Kansas Primary</a> Medium. August 2018.</td>
-									</tr>
-									<tr>	
-										<td><a href="https://www.wellesley.edu/albright/about/blog/3836-why-google-isn%E2%80%99t-always-right">Why Google Isn't Always Right</a>. The Spoke. October 2017.</td>
-									</tr>
-
-								</tbody>
-							</table>
-
-							</section>
-
-
-
-
-						</div>
-
-
-
-
-
-					</body>
-					</html>
+    <script src="js/main.js"></script>
+</body>
+</html>
