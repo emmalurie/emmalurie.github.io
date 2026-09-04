@@ -1,0 +1,30 @@
+{% include base_path %}
+{% comment %} Title links to the paper (paperurl) when available, then any project link, then the local page. {% endcomment %}
+{% if post.paperurl %}
+  {% assign pub_href = post.paperurl %}
+  {% if post.paperurl contains "://" %}
+    {% assign pub_href = post.paperurl %}
+  {% else %}
+    {% assign pub_href = post.paperurl | prepend: base_path %}
+  {% endif %}
+{% elsif post.link %}
+  {% assign pub_href = post.link %}
+{% else %}
+  {% assign pub_href = post.url | prepend: base_path %}
+{% endif %}
+
+<div class="list__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    <h2 class="archive__item-title" itemprop="headline">
+      <a href="{{ pub_href }}">{{ post.title }}</a>
+    </h2>
+    {% if post.citation %}
+      <p class="pub-cite" itemprop="description">{{ post.citation }}</p>
+    {% elsif post.venue %}
+      <p class="pub-cite"><i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }}</p>
+    {% endif %}
+    {% if post.link %}
+      <p class="pub-links"><a href="{{ post.link }}">Project site</a></p>
+    {% endif %}
+  </article>
+</div>

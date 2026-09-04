@@ -1,0 +1,20 @@
+# Navigation links shown in the site header.
+
+main:
+  - title: "About"
+    url: /
+
+  # - title: "Lab"
+  #   url: /gaps-lab/
+
+  - title: "Publications"
+    url: /publications/
+
+  - title: "CV"
+    url: /files/Emma_Lurie_CV.pdf
+
+  - title: "Teaching"
+    url: /teaching/
+
+  # - title: "FAQ"
+  #   url: /faq/
